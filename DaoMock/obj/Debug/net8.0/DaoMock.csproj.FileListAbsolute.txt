@@ -1,0 +1,15 @@
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\bin\Debug\net8.0\DaoMock.deps.json
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\bin\Debug\net8.0\DaoMock.dll
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\bin\Debug\net8.0\DaoMock.pdb
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\bin\Debug\net8.0\Interfaces.dll
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\bin\Debug\net8.0\Interfaces.pdb
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\DaoMock.csproj.AssemblyReference.cache
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\DaoMock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\DaoMock.AssemblyInfoInputs.cache
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\DaoMock.AssemblyInfo.cs
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\DaoMock.csproj.CoreCompileInputs.cache
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\DaoMock.csproj.Up2Date
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\DaoMock.dll
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\refint\DaoMock.dll
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\DaoMock.pdb
+C:\Users\jklec\Documents\Studia\wizualne\Cars\DaoMock\obj\Debug\net8.0\ref\DaoMock.dll
