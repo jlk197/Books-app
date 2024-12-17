@@ -1,4 +1,4 @@
-﻿namespace DaoMock
+﻿namespace KlechammerKardas.Books.DaoMock2
 {
     public class Producent : Interfaces.IProducent
     {

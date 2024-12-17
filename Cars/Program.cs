@@ -1,8 +1,10 @@
 ﻿using Interfaces;
 using System.Reflection;
 using System.Configuration;
+using KlechammerKardas.Books.Interfaces;
+using KlechammerKardas.Books.BLC;
 
-namespace Cars
+namespace KlechammerKardas.Books.Console
 {
     internal class Program
     {

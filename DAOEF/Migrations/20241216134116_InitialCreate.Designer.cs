@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace DAOEF.Migrations
+namespace KlechammerKardas.Books.DAOEF.Migrations
 {
     [DbContext(typeof(DAOSqlite))]
     [Migration("20241216134116_InitialCreate")]

@@ -1,5 +1,6 @@
 ﻿using Interfaces;
 using Microsoft.EntityFrameworkCore;
+using KlechammerKardas.Books.Interfaces;
 
 namespace KlechammerKardas.Books.DAOEF
 {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DaoMock
+namespace KlechammerKardas.Books.DaoMock2
 {
     public class Car : Interfaces.IBook
     {

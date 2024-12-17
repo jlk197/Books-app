@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using KlechammerKardas.Books.Interfaces;
+using KlechammerKardas.Books.DAOEF;
 
 namespace KlechammerKardas.Books.UI.ViewModel 
 {

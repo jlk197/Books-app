@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace DAOEF.Migrations
+namespace KlechammerKardas.Books.DAOEF.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

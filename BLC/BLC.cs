@@ -1,5 +1,6 @@
 ﻿using Interfaces;
 using System.Reflection;
+using KlechammerKardas.Books.Interfaces;
 
 namespace KlechammerKardas.Books.BLC
 {

@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using KlechammerKardas.Books.Interfaces;
+using KlechammerKardas.Books.UI.ViewModel;
 
 namespace KlechammerKardas.Books.UI
 {
