@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Configuration;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
@@ -46,6 +47,7 @@ namespace WpfApp1.ViewModel
             addNewProducerCommand = new RelayCommand(_ => AddNewProducer(), _ => CanAddProducer());
             saveProducerCommand = new RelayCommand(_ => SaveProducer(), _ => CanSaveChanges());
             filterDataCommand = new RelayCommand(_ => FilterData());
+            cancelDataCommand = new RelayCommand(_ => Cancel());
         }
 
         private void AddNewProducer()
@@ -148,6 +150,14 @@ namespace WpfApp1.ViewModel
             {
                 view.Filter = c => ((ProducerViewModel)c).Name.Contains(filter, StringComparison.OrdinalIgnoreCase);
             }
+        }
+
+        private RelayCommand cancelDataCommand;
+        public RelayCommand CancelDataCommand { get => cancelDataCommand; }
+
+        public void Cancel()
+        {
+            
         }
     }
 }
