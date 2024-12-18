@@ -32,3 +32,4 @@ C:\Users\jklec\Documents\Studia\wizualne\Books\DAOEF\obj\Debug\net8.0\refint\DAO
 C:\Users\jklec\Documents\Studia\wizualne\Books\DAOEF\obj\Debug\net8.0\DAOEF.pdb
 C:\Users\jklec\Documents\Studia\wizualne\Books\DAOEF\obj\Debug\net8.0\DAOEF.genruntimeconfig.cache
 C:\Users\jklec\Documents\Studia\wizualne\Books\DAOEF\obj\Debug\net8.0\ref\DAOEF.dll
+C:\Users\jklec\Documents\Studia\wizualne\Books\DAOEF\obj\Debug\net8.0\DAOEF.sourcelink.json
