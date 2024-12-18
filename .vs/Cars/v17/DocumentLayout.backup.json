@@ -6,10 +6,16 @@
       "AbsoluteMoniker": "D:0:0:{56C52676-7938-491C-9135-711F2B1A0F17}|..\\WpfApp1\\WpfApp1\\WpfApp1.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\wpfapp1\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56C52676-7938-491C-9135-711F2B1A0F17}|..\\WpfApp1\\WpfApp1\\WpfApp1.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\wpfapp1\\wpfapp1\\viewmodel\\producerlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56C52676-7938-491C-9135-711F2B1A0F17}|..\\WpfApp1\\WpfApp1\\WpfApp1.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\wpfapp1\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56C52676-7938-491C-9135-711F2B1A0F17}|..\\WpfApp1\\WpfApp1\\WpfApp1.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\wpfapp1\\wpfapp1\\viewmodel\\windowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56C52676-7938-491C-9135-711F2B1A0F17}|..\\WpfApp1\\WpfApp1\\WpfApp1.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\wpfapp1\\wpfapp1\\viewmodel\\bookslistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,35 +25,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "WindowViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs",
               "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs",
               "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs",
               "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T12:45:28.094Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProducerListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
+              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
+              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAawCcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T12:45:32.421Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProducerListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
-              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
-              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs*",
-              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAawCUAAABSAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T12:45:32.421Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T12:53:09.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BooksListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\BooksListViewModel.cs",
+              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\ViewModel\\BooksListViewModel.cs",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\BooksListViewModel.cs",
+              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\ViewModel\\BooksListViewModel.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAIAwwGMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T12:51:52.923Z"
             },
             {
               "$type": "Document",

@@ -21,7 +21,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new ViewModel.CarListViewModel();
+            DataContext = new ViewModel.WindowViewModel();
         }
     }
 }
