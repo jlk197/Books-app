@@ -170,6 +170,7 @@
                 <Button Content="Save Producer" DockPanel.Dock="Bottom" Command="{Binding ProducerView.SaveProducerCommand}" Margin="5"></Button>
                 <TextBox Text="{Binding ProducerView.Filter}" Margin="5" MinWidth="80"/>
                 <Button Content="Filter" Command="{Binding ProducerView.FilterDataCommand}" Margin="5"/>
+                <Button Content="Cancel" Command="{Binding ProducerView.CancelDataCommand}" Margin="5"/>
             </StackPanel>
         </StackPanel>
     </DockPanel>

@@ -35,11 +35,6 @@ namespace WpfApp1.ViewModel
 
             string libraryName = ConfigurationManager.AppSettings["library_name"];
             daoMock = new BLC.BLC(libraryName).DAO;
-           /* producers = new ObservableCollection<ProducerViewModel>();
-            foreach (var p in daoMock.GetAllProducers())
-            {
-                producers.Add(new ProducerViewModel(p));
-            }*/
             books = new ObservableCollection<BookViewModel>();
             foreach (var car in daoMock.GetAllBooks()) {
                 ProducerViewModel p = producers.First(x => x.Id == car.Producer.Id);  
