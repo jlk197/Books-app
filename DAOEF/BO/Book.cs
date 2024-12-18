@@ -17,8 +17,10 @@ namespace DAOEF.BO
         IProducer IBook.Producer { 
             get=>Producer; 
             set {
-                this.Producer= value as BO.Producer;
-                this.ProducerId = value.Id;
+                if (value != null) {
+                    this.Producer = value as BO.Producer;
+                    this.ProducerId = value.Id;
+                }
             } 
         }
         public int ProdYear { get; set; }

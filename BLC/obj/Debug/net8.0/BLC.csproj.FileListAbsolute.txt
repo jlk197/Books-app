@@ -28,3 +28,4 @@ C:\Users\jklec\Documents\Studia\wizualne\Books\BLC\obj\Debug\net8.0\BLC.dll
 C:\Users\jklec\Documents\Studia\wizualne\Books\BLC\obj\Debug\net8.0\refint\BLC.dll
 C:\Users\jklec\Documents\Studia\wizualne\Books\BLC\obj\Debug\net8.0\BLC.pdb
 C:\Users\jklec\Documents\Studia\wizualne\Books\BLC\obj\Debug\net8.0\ref\BLC.dll
+C:\Users\jklec\Documents\Studia\wizualne\Books\BLC\obj\Debug\net8.0\BLC.sourcelink.json

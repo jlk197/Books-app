@@ -7,34 +7,85 @@
         mc:Ignorable="d"
         xmlns:interfaces="clr-namespace:Interfaces;assembly=Interfaces"
         xmlns:system="clr-namespace:System;assembly=netstandard"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800"
+        Name="Okno">
     <Window.Resources>
-        <ObjectDataProvider x:Key="TransmissionTypeDP" ObjectType="{x:Type system:Enum}" MethodName="GetValues">
+        <ObjectDataProvider x:Key="GenreTypeDP" ObjectType="{x:Type system:Enum}" MethodName="GetValues">
             <ObjectDataProvider.MethodParameters>
-                <x:Type Type="{x:Type interfaces:TransmissionType}"/>
+                <x:Type Type="{x:Type interfaces:GenreType}"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
+        <Style x:Key="TextBoxWithErrors" TargetType="{x:Type TextBox}">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <DockPanel LastChildFill="True">
+                            <ListBox DockPanel.Dock ="Bottom" Name = "lstErrors" ItemsSource="{Binding ElementName=ErrComponent,
+                                Path=AdornedElement.(Validation.Errors)}">
+
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Foreground="Red" FontSize="9pt"/>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <Border  DockPanel.Dock="Left" Width="24" Height="24" BorderBrush="Red"
+                                    CornerRadius="12" BorderThickness="1" Margin="0 0 5 0"
+                                    HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="{Binding ElementName=lstErrors, Path=ItemsSource.Count}"
+                                    VerticalAlignment="Center" HorizontalAlignment="Center"
+                                    Foreground="Red" FontWeight="Bold"/>
+                            </Border>
+                            <Border BorderBrush="Red" BorderThickness="2">
+                                <AdornedElementPlaceholder Name="ErrComponent"/>
+                            </Border>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="Margin" Value="10 0 10 35"/>
+                </Trigger>
+                <Trigger Property="Validation.HasError" Value="False">
+                    <Setter Property="Margin" Value="10"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
     <DockPanel>
-        
-        <ListBox Name="lista" DockPanel.Dock="Left" MinWidth="100" Background="DeepPink" ItemsSource="{Binding Cars}"
-                 SelectedItem="{Binding SelectedCar}">
+        <ListBox Name="lista" DockPanel.Dock="Left" MinWidth="100" Background="DeepPink" 
+                 ItemsSource="{Binding BooksView.Books}" SelectedItem="{Binding BooksView.SelectedBook}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Border BorderThickness="2" BorderBrush="HotPink" MinWidth="95">
-                        <StackPanel>
+                        <StackPanel Margin="5">
                             <TextBlock Text="{Binding Id}"/>
-                            <TextBlock Text="{Binding Name}"/>
-                            <TextBlock Text="{Binding ProdYear}" HorizontalAlignment="Right"/>
+                            <TextBlock Text="{Binding Title}"/>
+                            <TextBlock Text="{Binding PublicationYear}" HorizontalAlignment="Right"/>
                         </StackPanel>
-                    </Border>                    
+                    </Border>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Button Content="Add new Car" DockPanel.Dock="Bottom" Command="{Binding AddNewCarCommand}"></Button>
-        <StackPanel>
+        <ListBox Name="lista2" DockPanel.Dock="Right" MinWidth="100" Background="SkyBlue" 
+                 ItemsSource="{Binding ProducerView.Producers}"
+         SelectedItem="{Binding ProducerView.SelectedProducer}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="2" BorderBrush="Blue" MinWidth="95">
+                        <StackPanel Margin="5">
+                            <TextBlock Text="{Binding Id}"/>
+                            <TextBlock Text="{Binding Name}"/>
+                            <TextBlock Text="{Binding EstablishmentYear}" HorizontalAlignment="Right"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Orientation="Vertical" >
             <Grid Background="Pink" 
-              DataContext="{Binding SelectedCar}">
+              DataContext="{Binding BooksView.EditedBook}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="3*"/>
@@ -49,34 +100,78 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Label Grid.Column="0" Grid.Row="0">Id</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Id}"
+                         IsReadOnly="True" Margin="10"/>
 
-                <StackPanel Grid.Column="1" Grid.Row="0" >
-                    <TextBox  VerticalAlignment="Center" Margin="10" Text="{Binding Id}"></TextBox>
-                    <StackPanel Orientation="Horizontal">
-                        <Label>3</Label>
-                        <Label Background="red">Id nie może być wartością ujemną</Label>
-                    </StackPanel>
-                </StackPanel>
+                <Label Grid.Column="0" Grid.Row="1">Tytuł</Label>
+                <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"
+                         Style="{StaticResource TextBoxWithErrors}" 
+                         Text="{Binding Title}"/>
+
+                <Label Grid.Column="0" Grid.Row="2">Wydawnictwo</Label>
+                <ComboBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="10"
+                          ItemsSource="{Binding ElementName=Okno, Path=DataContext.ProducerView.Producers}" 
+                          DisplayMemberPath="Name" SelectedItem="{Binding Producer}"/>
+
+                <Label Grid.Column="0" Grid.Row="3">Rok wydania</Label>
+                <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" 
+                         Style="{StaticResource TextBoxWithErrors}"
+                         Text="{Binding PublicationYear}"></TextBox>
+
+                <Label Grid.Column="0" Grid.Row="6">Rodzaj</Label>
+                <ComboBox Grid.Column="1" Grid.Row="6" Margin="10"
+                      ItemsSource="{Binding Source={StaticResource GenreTypeDP}}"
+                      Text="{Binding Genre}"/>
+            </Grid>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" Margin="0 10 0 0">
+                <Button Content="Add new Book" DockPanel.Dock="Bottom" Command="{Binding BooksView.AddNewBookCommand}" Margin="5"></Button>
+                <Button Content="Save Book" DockPanel.Dock="Bottom" Command="{Binding BooksView.SaveBookCommand}" Margin="5"></Button>
+                <TextBox Text="{Binding BooksView.Filter}" Margin="5" MinWidth="80"/>
+                <Button Content="Filter" Command="{Binding BooksView.FilterDataCommand}" Margin="5"/>
+            </StackPanel>
+
+            <!-- Producenci -->
+            <Grid Background="LightBlue" Margin="0 20 0 0"
+              DataContext="{Binding ProducerView.EditedProducer}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0">Id</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Text="{Binding Id}"
+                         IsReadOnly="True" Margin="10"/>
 
                 <Label Grid.Column="0" Grid.Row="1">Nazwa</Label>
-                <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="10" Text="{Binding Name}"></TextBox>
-                <Label Grid.Column="0" Grid.Row="2">Id Producenta</Label>
-                <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="10" Text="{Binding ProducerId}"></TextBox>
-                <Label Grid.Column="0" Grid.Row="3">Rok produkcji</Label>
-                <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Margin="10" Text="{Binding ProdYear}"></TextBox>
-                <Label Grid.Column="0" Grid.Row="4">Przebieg</Label>
-                <TextBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Margin="10" Text="{Binding Mileage}"></TextBox>
-                <Label Grid.Column="0" Grid.Row="5">Pojemność silnika</Label>
-                <TextBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Margin="10" Text="{Binding Engine}"></TextBox>
-                <Label Grid.Column="0" Grid.Row="6">Skrzynia biegów</Label>
-                <!--<TextBox Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Margin="10" Text="{Binding Transmission}"></TextBox>
--->
-                <ComboBox Grid.Column="1" Grid.Row="6"
-                      ItemsSource="{Binding Source={StaticResource TransmissionTypeDP}}"
-                      Text="{Binding Transmission}"/>
-            </Grid>
-        </StackPanel>
-        
+                <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"
+                         Style="{StaticResource TextBoxWithErrors}" 
+                         Text="{Binding Name}"/>
 
+                <Label Grid.Column="0" Grid.Row="2">Kraj</Label>
+                <TextBox Grid.Column="1" Grid.Row="2"
+                        Style="{StaticResource TextBoxWithErrors}" 
+                        Text="{Binding Country}"/>
+
+                <Label Grid.Column="0" Grid.Row="3">Rok założenia</Label>
+                <TextBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" 
+                         Style="{StaticResource TextBoxWithErrors}"
+                         Text="{Binding EstablishmentYear}"></TextBox>
+
+                
+            </Grid>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" Margin="0 10 0 0">
+                <Button Content="Add new Producer" DockPanel.Dock="Bottom" Command="{Binding ProducerView.AddNewProducerCommand}" Margin="5"></Button>
+                <Button Content="Save Producer" DockPanel.Dock="Bottom" Command="{Binding ProducerView.SaveProducerCommand}" Margin="5"></Button>
+                <TextBox Text="{Binding ProducerView.Filter}" Margin="5" MinWidth="80"/>
+                <Button Content="Filter" Command="{Binding ProducerView.FilterDataCommand}" Margin="5"/>
+                <Button Content="Cancel" Command="{Binding ProducerView.CancelDataCommand}" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
     </DockPanel>
 </Window>

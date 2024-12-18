@@ -15,6 +15,7 @@ namespace Interfaces
         IProducer CreateNewProducent();
 
         void SaveChanges();
+        void CancelChanges();
         void AddBook(IBook book);
         void RemoveBook(IBook book);
         void AddProducer(IProducer producent);

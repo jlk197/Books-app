@@ -1,0 +1,114 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\Books\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58838C56-6006-4247-9BF2-4CE8329AC393}|DAOEF\\DAOEF.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\books\\daoef\\bo\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58838C56-6006-4247-9BF2-4CE8329AC393}|DAOEF\\DAOEF.csproj|solutionrelative:daoef\\bo\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C52676-7938-491C-9135-711F2B1A0F17}|..\\WpfApp1\\WpfApp1\\WpfApp1.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\wpfapp1\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C52676-7938-491C-9135-711F2B1A0F17}|..\\WpfApp1\\WpfApp1\\WpfApp1.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\wpfapp1\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56C52676-7938-491C-9135-711F2B1A0F17}|..\\WpfApp1\\WpfApp1\\WpfApp1.csproj|c:\\users\\jklec\\documents\\studia\\wizualne\\wpfapp1\\wpfapp1\\viewmodel\\bookslistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs",
+              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs",
+              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\ViewModel\\WindowViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T12:45:28.094Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProducerListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
+              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
+              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\ViewModel\\ProducerListViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAawCcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T12:45:32.421Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\Books\\DAOEF\\BO\\Book.cs",
+              "RelativeDocumentMoniker": "DAOEF\\BO\\Book.cs",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\Books\\DAOEF\\BO\\Book.cs*",
+              "RelativeToolTip": "DAOEF\\BO\\Book.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAArwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T13:02:24.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T12:53:09.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BooksListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\BooksListViewModel.cs",
+              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\ViewModel\\BooksListViewModel.cs",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\ViewModel\\BooksListViewModel.cs",
+              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\ViewModel\\BooksListViewModel.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAIAwwGMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T12:51:52.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\WpfApp1\\WpfApp1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\WpfApp1\\WpfApp1\\MainWindow.xaml",
+              "RelativeToolTip": "..\\WpfApp1\\WpfApp1\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-18T12:50:12.412Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

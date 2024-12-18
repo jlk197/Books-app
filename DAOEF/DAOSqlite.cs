@@ -68,6 +68,9 @@ namespace DAOEF
         {
             this.SaveChanges();
         }
-
+        void IDaoMock.CancelChanges()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

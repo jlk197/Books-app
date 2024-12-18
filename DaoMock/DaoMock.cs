@@ -38,6 +38,11 @@ namespace DaoMock
             throw new NotImplementedException();
         }
 
+        public void CancelChanges()
+        {
+            throw new NotImplementedException();
+        }
+
         public IBook CreateNewBook()
         {
             throw new NotImplementedException();
