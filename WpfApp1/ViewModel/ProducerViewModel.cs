@@ -1,4 +1,4 @@
-﻿using Interfaces;
+using Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,103 +10,89 @@ using System.Threading.Tasks;
 
 namespace WpfApp1.ViewModel
 {
-    class BookViewModel : INotifyPropertyChanged, INotifyDataErrorInfo
+    class ProducerViewModel : INotifyPropertyChanged, INotifyDataErrorInfo
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
 
-        private IBook book;
-        public IBook Book => book;
-        public BookViewModel(IBook book, ProducerViewModel? producer)
+        private IProducer producer;
+        public IProducer Producer => producer;
+        public ProducerViewModel(IProducer producer)
         {
-            this.book = book;
+            this.producer = producer;
             this.isChanged = false;
-            if (producer != null) this.producer = producer;
         }
 
         public int Id
         {
-            get { return book.Id; }
+            get { return producer.Id; }
             set
             {
-                book.Id = value;
+                producer.Id = value;
                 RaisePropertyChanged(nameof(Id));
             }
         }
         [Required(ErrorMessage = "Nazwa musi zostać nadana")]
-        [StringLength(30, MinimumLength = 1, ErrorMessage ="Długość nazwy <1, 30>")]
-        public string Title
+        [StringLength(30, MinimumLength = 1, ErrorMessage = "Długość nazwy <1, 30>")]
+        public string Name
         {
-            get { return book.Title; }
+            get { return producer.Name; }
             set
             {
-                book.Title = value;
+                producer.Name = value;
                 this.isChanged = true;
-                RaisePropertyChanged(nameof(Title));
+                RaisePropertyChanged(nameof(Name));
             }
         }
 
-        private ProducerViewModel producer;
-        [Required]
-        public ProducerViewModel Producer
+        [Required(ErrorMessage = "Kraj musi zostać podany")]
+        [StringLength(20, MinimumLength = 1, ErrorMessage = "Długość nazwy kraju <1, 20>")]
+        public string Country
         {
-            get { return producer; }
+            get { return producer.Country; }
             set
             {
-                if (producer != value)
-                {
-                    producer = value;
-                    book.Producer = value?.Producer; 
-                    this.isChanged = true;
-                    RaisePropertyChanged(nameof(Producer));
-                }
+                producer.Country = value;
+                this.isChanged = true;
+                RaisePropertyChanged(nameof(Country));
             }
         }
 
         [Required]
-        [Range(1850, 2025, ErrorMessage = "Rok wydania <1850, 2025>")]
-        public int PublicationYear
+        [Range(1900, 2025, ErrorMessage = "Rok założenia <1900, 2025>")]
+        public int EstablishmentYear
         {
-            get { return book.PublicationYear; }
+            get { return producer.EstablishmentYear; }
             set
             {
-                book.PublicationYear = value; 
+                producer.EstablishmentYear = value;
                 this.isChanged = true;
-                RaisePropertyChanged(nameof(PublicationYear));
-            }
-        }
-        public GenreType Genre
-        {
-            get { return book.Genre; }
-            set
-            {
-                book.Genre = value; 
-                this.isChanged = true;
-                RaisePropertyChanged(nameof(Genre));
+                RaisePropertyChanged(nameof(EstablishmentYear));
             }
         }
 
-
-        private void RaisePropertyChanged(string propertyName) {
+        private void RaisePropertyChanged(string propertyName)
+        {
             if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
-            if (propertyName != nameof(HasErrors)) {
+            if (propertyName != nameof(HasErrors))
+            {
                 Validate();
             }
         }
 
-       
+
 
         #region INotifyDataErrorInfo implementation
         public event EventHandler<DataErrorsChangedEventArgs>? ErrorsChanged;
 
-        public bool HasErrors => errorsCollection.Count>0;
+        public bool HasErrors => errorsCollection.Count > 0;
 
         public IEnumerable GetErrors(string? propertyName)
         {
-            if (string.IsNullOrEmpty(propertyName) || !errorsCollection.ContainsKey(propertyName)) 
+            if (string.IsNullOrEmpty(propertyName) || !errorsCollection.ContainsKey(propertyName))
             {
                 return null;
             }
@@ -114,24 +100,25 @@ namespace WpfApp1.ViewModel
         }
 
         private Dictionary<string, ICollection<string>>? errorsCollection = new Dictionary<string, ICollection<string>>();
-        protected void RaiseErrorChanged(string propertyName) 
+        protected void RaiseErrorChanged(string propertyName)
         {
-            if(ErrorsChanged != null)
+            if (ErrorsChanged != null)
             {
                 ErrorsChanged(this, new DataErrorsChangedEventArgs(propertyName));
                 RaisePropertyChanged(nameof(HasErrors));
             }
         }
 
-        public void Validate() 
+        public void Validate()
         {
             var validationContext = new ValidationContext(this, null, null);
             var validationResults = new List<ValidationResult>();
 
             Validator.TryValidateObject(this, validationContext, validationResults, true);
 
-            foreach (var kv in errorsCollection.ToList()) { 
-                if(validationResults.All(r => r.MemberNames.All(m => m!= kv.Key)))
+            foreach (var kv in errorsCollection.ToList())
+            {
+                if (validationResults.All(r => r.MemberNames.All(m => m != kv.Key)))
                 {
                     errorsCollection.Remove(kv.Key);
                     RaiseErrorChanged(kv.Key);
@@ -143,7 +130,8 @@ namespace WpfApp1.ViewModel
                     select gr;
 
 
-            foreach (var prop in q) { 
+            foreach (var prop in q)
+            {
                 var messages = prop.Select(m => m.ErrorMessage).ToList();
 
                 if (errorsCollection.ContainsKey(prop.Key))
@@ -157,9 +145,11 @@ namespace WpfApp1.ViewModel
         #endregion
 
         private bool isChanged;
-        public bool IsChanged {
+        public bool IsChanged
+        {
             get { return isChanged; }
-            set {
+            set
+            {
                 isChanged = value;
                 RaisePropertyChanged(nameof(isChanged));
             }
