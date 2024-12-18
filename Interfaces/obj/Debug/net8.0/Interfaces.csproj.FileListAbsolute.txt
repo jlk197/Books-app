@@ -20,3 +20,4 @@ C:\Users\jklec\Documents\Studia\wizualne\Books\Interfaces\obj\Debug\net8.0\Inter
 C:\Users\jklec\Documents\Studia\wizualne\Books\Interfaces\obj\Debug\net8.0\refint\Interfaces.dll
 C:\Users\jklec\Documents\Studia\wizualne\Books\Interfaces\obj\Debug\net8.0\Interfaces.pdb
 C:\Users\jklec\Documents\Studia\wizualne\Books\Interfaces\obj\Debug\net8.0\ref\Interfaces.dll
+C:\Users\jklec\Documents\Studia\wizualne\Books\Interfaces\obj\Debug\net8.0\Interfaces.sourcelink.json

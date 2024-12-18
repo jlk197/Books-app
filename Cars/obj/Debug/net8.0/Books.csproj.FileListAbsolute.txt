@@ -62,3 +62,4 @@ C:\Users\jklec\Documents\Studia\wizualne\Books\Cars\obj\Debug\net8.0\refint\Book
 C:\Users\jklec\Documents\Studia\wizualne\Books\Cars\obj\Debug\net8.0\Books.pdb
 C:\Users\jklec\Documents\Studia\wizualne\Books\Cars\obj\Debug\net8.0\Books.genruntimeconfig.cache
 C:\Users\jklec\Documents\Studia\wizualne\Books\Cars\obj\Debug\net8.0\ref\Books.dll
+C:\Users\jklec\Documents\Studia\wizualne\Books\Cars\obj\Debug\net8.0\Books.sourcelink.json
