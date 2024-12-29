@@ -45,7 +45,7 @@ namespace DAOEF
 
         public IEnumerable<IBook> GetAllBooks()
         {
-            var cars = Books.Include("Producer").ToList();
+            var books = Books.Include("Producer").ToList();
             return Books;
         }
 

@@ -44,6 +44,7 @@ C:\Users\karda\Desktop\Books-app-producer_editing\DAOEF\obj\Debug\net8.0\DAOEF.G
 C:\Users\karda\Desktop\Books-app-producer_editing\DAOEF\obj\Debug\net8.0\DAOEF.AssemblyInfoInputs.cache
 C:\Users\karda\Desktop\Books-app-producer_editing\DAOEF\obj\Debug\net8.0\DAOEF.AssemblyInfo.cs
 C:\Users\karda\Desktop\Books-app-producer_editing\DAOEF\obj\Debug\net8.0\DAOEF.csproj.CoreCompileInputs.cache
+C:\Users\karda\Desktop\Books-app-producer_editing\DAOEF\obj\Debug\net8.0\DAOEF.sourcelink.json
 C:\Users\karda\Desktop\Books-app-producer_editing\DAOEF\obj\Debug\net8.0\DAOEF.csproj.Up2Date
 C:\Users\karda\Desktop\Books-app-producer_editing\DAOEF\obj\Debug\net8.0\DAOEF.dll
 C:\Users\karda\Desktop\Books-app-producer_editing\DAOEF\obj\Debug\net8.0\refint\DAOEF.dll

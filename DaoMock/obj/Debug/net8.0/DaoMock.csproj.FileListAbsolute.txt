@@ -39,6 +39,7 @@ C:\Users\karda\Desktop\Books-app-producer_editing\DaoMock\obj\Debug\net8.0\DaoMo
 C:\Users\karda\Desktop\Books-app-producer_editing\DaoMock\obj\Debug\net8.0\DaoMock.AssemblyInfoInputs.cache
 C:\Users\karda\Desktop\Books-app-producer_editing\DaoMock\obj\Debug\net8.0\DaoMock.AssemblyInfo.cs
 C:\Users\karda\Desktop\Books-app-producer_editing\DaoMock\obj\Debug\net8.0\DaoMock.csproj.CoreCompileInputs.cache
+C:\Users\karda\Desktop\Books-app-producer_editing\DaoMock\obj\Debug\net8.0\DaoMock.sourcelink.json
 C:\Users\karda\Desktop\Books-app-producer_editing\DaoMock\obj\Debug\net8.0\DaoMock.csproj.Up2Date
 C:\Users\karda\Desktop\Books-app-producer_editing\DaoMock\obj\Debug\net8.0\DaoMock.dll
 C:\Users\karda\Desktop\Books-app-producer_editing\DaoMock\obj\Debug\net8.0\refint\DaoMock.dll

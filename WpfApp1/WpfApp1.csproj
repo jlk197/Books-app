@@ -9,12 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="CarsDB">
-      <HintPath>..\..\CarsDB.dll</HintPath>
-    </Reference>
-    <Reference Include="Interfaces">
-      <HintPath>..\..\Interfaces.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BLC\BLC.csproj" />
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
+  </ItemGroup>
+
+  
 
 </Project>

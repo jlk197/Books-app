@@ -39,6 +39,7 @@ C:\Users\karda\Desktop\Books-app-producer_editing\BLC\obj\Debug\net8.0\BLC.Gener
 C:\Users\karda\Desktop\Books-app-producer_editing\BLC\obj\Debug\net8.0\BLC.AssemblyInfoInputs.cache
 C:\Users\karda\Desktop\Books-app-producer_editing\BLC\obj\Debug\net8.0\BLC.AssemblyInfo.cs
 C:\Users\karda\Desktop\Books-app-producer_editing\BLC\obj\Debug\net8.0\BLC.csproj.CoreCompileInputs.cache
+C:\Users\karda\Desktop\Books-app-producer_editing\BLC\obj\Debug\net8.0\BLC.sourcelink.json
 C:\Users\karda\Desktop\Books-app-producer_editing\BLC\obj\Debug\net8.0\BLC.csproj.Up2Date
 C:\Users\karda\Desktop\Books-app-producer_editing\BLC\obj\Debug\net8.0\BLC.dll
 C:\Users\karda\Desktop\Books-app-producer_editing\BLC\obj\Debug\net8.0\refint\BLC.dll
