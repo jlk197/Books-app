@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Cars": {
+      "commandName": "Project",
+      "commandLineArgs": "\"..\\..\\..\\..\\..\\Cars\\DaoMock\\bin\\Debug\\net8.0\\DaoMock.dll\""
+    }
+  }
+}
