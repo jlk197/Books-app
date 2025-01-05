@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1DYxNpWWh7s=",
+  "dgSpecHash": "K65QDhUTKo0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\karda\\Desktop\\Books-app-producer_editing\\BLC\\BLC.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\Books\\BLC\\BLC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jklec\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\jklec\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.2\\microsoft.extensions.configuration.binder.8.0.2.nupkg.sha512",
+    "C:\\Users\\jklec\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

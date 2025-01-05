@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DaoMock")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e34b1d8675ba8e61c8529ec842945327da48f02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+841f518f6f109136fd7ff2d9694172ae664229a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("DaoMock")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DaoMock")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

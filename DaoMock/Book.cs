@@ -11,7 +11,6 @@ namespace DaoMock
     public class Book : Interfaces.IBook
     {
         public int Id { get; set; }
-        public int ProdYear { get; set; }
         public string Title { get; set; }
         public IProducer Producer { get; set; }
         public GenreType Genre { get; set; }

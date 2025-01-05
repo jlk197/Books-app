@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAOEF", "DAOEF\DAOEF.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLC", "BLC\BLC.csproj", "{721CEEB4-BDB5-4E2A-A161-A41EE68B23F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAppWeb", "BookAppWeb\BookAppWeb.csproj", "{C5AE221C-1382-43B1-BA08-DFC672329F49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{721CEEB4-BDB5-4E2A-A161-A41EE68B23F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{721CEEB4-BDB5-4E2A-A161-A41EE68B23F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{721CEEB4-BDB5-4E2A-A161-A41EE68B23F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5AE221C-1382-43B1-BA08-DFC672329F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5AE221C-1382-43B1-BA08-DFC672329F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5AE221C-1382-43B1-BA08-DFC672329F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5AE221C-1382-43B1-BA08-DFC672329F49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

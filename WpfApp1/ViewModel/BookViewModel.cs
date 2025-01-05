@@ -56,7 +56,7 @@ namespace WpfApp1.ViewModel
                 if (producer != value)
                 {
                     producer = value;
-                    book.Producer = value?.Producer; 
+                    this.book.Producer = producer.Producer;
                     this.isChanged = true;
                     RaisePropertyChanged(nameof(Producer));
                 }

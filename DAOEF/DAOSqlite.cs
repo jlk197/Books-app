@@ -5,12 +5,13 @@ namespace DAOEF
 {
     public class DAOSqlite : DbContext, Interfaces.IDaoMock
     {
-        private DbSet<BO.Producer> Producers { get; set; }
-        private DbSet<BO.Book> Books { get; set; }
+        public DbSet<BO.Producer> Producers { get; set; }
+        public DbSet<BO.Book> Books { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        { 
             optionsBuilder.UseSqlite(@"Filename=..\..\..\..\DAOEF\carapp4.db");
+            //optionsBuilder.UseSqlite(@"Filename=C:\Users\jklec\Documents\Studia\wizualne\Books\DAOEF\carapp4.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -56,21 +57,17 @@ namespace DAOEF
 
         public void RemoveBook(IBook book)
         {
-            throw new NotImplementedException();
+            Books.Remove(book as BO.Book);
         }
 
         public void RemoveProducer(IProducer producent)
         {
-            throw new NotImplementedException();
+            Producers.Remove(producent as BO.Producer);
         }
 
         void IDaoMock.SaveChanges()
         {
             this.SaveChanges();
-        }
-        void IDaoMock.CancelChanges()
-        {
-            throw new NotImplementedException();
         }
     }
 }

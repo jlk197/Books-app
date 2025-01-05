@@ -25,9 +25,6 @@ namespace DAOEF.Migrations
                     b.Property<int>("Genre")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ProdYear")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("ProducerId")
                         .HasColumnType("INTEGER");
 
@@ -36,6 +33,7 @@ namespace DAOEF.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
+                        .HasMaxLength(30)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -53,6 +51,7 @@ namespace DAOEF.Migrations
 
                     b.Property<string>("Country")
                         .IsRequired()
+                        .HasMaxLength(20)
                         .HasColumnType("TEXT");
 
                     b.Property<int>("EstablishmentYear")
@@ -60,6 +59,7 @@ namespace DAOEF.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasMaxLength(30)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

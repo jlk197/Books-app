@@ -1,4 +1,5 @@
 ﻿using Interfaces;
+using Microsoft.Extensions.Configuration;
 using System.Reflection;
 
 namespace BLC
@@ -13,6 +14,16 @@ namespace BLC
         }
 
         public BLC(string liblaryName) {
+            CreateDAO(liblaryName);
+        }
+
+        public BLC(IConfiguration config) {
+            string liblaryName = config.GetValue<string>("liblaryName");
+            CreateDAO(liblaryName);
+        }
+
+        private void CreateDAO(string liblaryName)
+        {
             Assembly hiddenLibrary = Assembly.UnsafeLoadFrom(liblaryName);
             Type typeToCreate = null;
 
