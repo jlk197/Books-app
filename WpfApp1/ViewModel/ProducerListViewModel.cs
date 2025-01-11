@@ -48,7 +48,8 @@ namespace WpfApp1.ViewModel
             saveProducerCommand = new RelayCommand(_ => SaveProducer(), _ => CanSaveChanges());
             filterDataCommand = new RelayCommand(_ => FilterData());
 			cancelDataCommand = new RelayCommand(_ => CancelData(), _ => CanCancelData());
-		}
+			deleteDataCommand = new RelayCommand(_ => DeleteData(), _ => CanDeleteData());
+        }
 
 		private void AddNewProducer()
         {
@@ -155,11 +156,6 @@ namespace WpfApp1.ViewModel
         private RelayCommand cancelDataCommand;
         public RelayCommand CancelDataCommand { get => cancelDataCommand; }
 
-        public void Cancel()
-        {
-            
-        }
-
 		private bool CanCancelData()
 		{
 			return EditedProducer != null && EditedProducer.IsChanged;
@@ -172,5 +168,24 @@ namespace WpfApp1.ViewModel
 				EditedProducer = null;
 			}
 		}
-	}
+
+        private RelayCommand deleteDataCommand;
+        public RelayCommand DeleteDataCommand { get => deleteDataCommand; }
+
+        private bool CanDeleteData()
+        {
+            return SelectedProducer != null;
+        }
+
+        private void DeleteData()
+        {
+            if (SelectedProducer != null && !daoMock.ProducerHasBooks(SelectedProducer.Producer))
+            {
+                
+                daoMock.RemoveProducer(SelectedProducer.Producer);
+                producers.Remove(SelectedProducer);
+                daoMock.SaveChanges();
+            }
+        }
+    }
 }

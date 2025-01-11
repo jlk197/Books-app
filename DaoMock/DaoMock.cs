@@ -30,27 +30,22 @@ namespace DaoMock
 
         public void AddBook(IBook book)
         {
-            throw new NotImplementedException();
+            bookList.Add(book);
         }
 
         public void AddProducer(IProducer producent)
         {
-            throw new NotImplementedException();
-        }
-
-        public void CancelChanges()
-        {
-            throw new NotImplementedException();
+            producerList.Add(producent);
         }
 
         public IBook CreateNewBook()
         {
-            throw new NotImplementedException();
+            return new Book();
         }
 
         public IProducer CreateNewProducent()
         {
-            throw new NotImplementedException();
+            return new Producer();
         }
 
         public List<IBook> GetAllBooks()
@@ -58,34 +53,35 @@ namespace DaoMock
             return bookList;
         }
 
-        public List<IProducer> GetAllProducents()
+
+        public IEnumerable<IProducer> GetAllProducers()
         {
             return producerList;
         }
 
-        public IEnumerable<IProducer> GetAllProducers()
+        public bool ProducerHasBooks(IProducer producent)
         {
-            throw new NotImplementedException();
+            return bookList.Any(b => b.Producer.Id == producent.Id);
         }
 
         public void RemoveBook(IBook book)
         {
-            throw new NotImplementedException();
+            bookList.Remove(book);
         }
 
         public void RemoveProducer(IProducer producent)
         {
-            throw new NotImplementedException();
+            producerList.Remove(producent);
         }
 
         public void SaveChanges()
         {
-            throw new NotImplementedException();
+            
         }
 
         IEnumerable<IBook> IDaoMock.GetAllBooks()
         {
-            throw new NotImplementedException();
+            return bookList;
         }
     }
 }

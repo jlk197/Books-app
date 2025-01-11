@@ -129,8 +129,9 @@
                 <Button Content="Save Book" DockPanel.Dock="Bottom" Command="{Binding BooksView.SaveBookCommand}" Margin="5"></Button>
                 <TextBox Text="{Binding BooksView.Filter}" Margin="5" MinWidth="80"/>
                 <Button Content="Filter" Command="{Binding BooksView.FilterDataCommand}" Margin="5"/>
-				<Button Content="Cancel" Command="{Binding BooksView.CancelDataCommand}" Margin="5"/>
-			</StackPanel>
+                <Button Content="Cancel" Command="{Binding BooksView.CancelDataCommand}" Margin="5"/>
+                <Button Content="Delete" Command="{Binding BooksView.DeleteDataCommand}" Margin="5"/>
+            </StackPanel>
 
             <!-- Producenci -->
             <Grid Background="LightBlue" Margin="0 20 0 0"
@@ -172,6 +173,7 @@
                 <TextBox Text="{Binding ProducerView.Filter}" Margin="5" MinWidth="80"/>
                 <Button Content="Filter" Command="{Binding ProducerView.FilterDataCommand}" Margin="5"/>
                 <Button Content="Cancel" Command="{Binding ProducerView.CancelDataCommand}" Margin="5"/>
+                <Button Content="Delete" Command="{Binding ProducerView.DeleteDataCommand}" Margin="5"/>
             </StackPanel>
         </StackPanel>
     </DockPanel>

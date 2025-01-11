@@ -19,5 +19,6 @@ namespace Interfaces
         void RemoveBook(IBook book);
         void AddProducer(IProducer producent);
         void RemoveProducer(IProducer producent);
+        bool ProducerHasBooks(IProducer producent);
     }
 }

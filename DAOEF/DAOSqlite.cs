@@ -57,17 +57,30 @@ namespace DAOEF
 
         public void RemoveBook(IBook book)
         {
-            Books.Remove(book as BO.Book);
+            var bookToDelte = Books.FirstOrDefault(b => b.Id == book.Id);
+            if (bookToDelte != null) {
+                Books.Remove(bookToDelte as BO.Book);
+            }
         }
 
         public void RemoveProducer(IProducer producent)
         {
-            Producers.Remove(producent as BO.Producer);
+            var producerToDelte = Producers.FirstOrDefault(b => b.Id == producent.Id);
+            if (producerToDelte != null)
+            {
+                Producers.Remove(producerToDelte as BO.Producer);
+            }
         }
 
         void IDaoMock.SaveChanges()
         {
             this.SaveChanges();
         }
+        public bool ProducerHasBooks(IProducer producent)
+        {
+            var allBooks = GetAllBooks();
+            return allBooks.Any(b => b.Producer.Id == producent.Id);
+        }
+
     }
 }

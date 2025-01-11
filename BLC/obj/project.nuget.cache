@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "39OjH3xx9KI=",
+  "dgSpecHash": "K65QDhUTKo0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ubierzsie\\source\\repos\\jlk197\\Books-app\\BLC\\BLC.csproj",
+  "projectFilePath": "C:\\Users\\jklec\\Documents\\Studia\\wizualne\\Books\\BLC\\BLC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ubierzsie\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\ubierzsie\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.2\\microsoft.extensions.configuration.binder.8.0.2.nupkg.sha512",
-    "C:\\Users\\ubierzsie\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    "C:\\Users\\jklec\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\jklec\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.2\\microsoft.extensions.configuration.binder.8.0.2.nupkg.sha512",
+    "C:\\Users\\jklec\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
