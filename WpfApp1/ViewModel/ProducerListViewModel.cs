@@ -47,10 +47,10 @@ namespace WpfApp1.ViewModel
             addNewProducerCommand = new RelayCommand(_ => AddNewProducer(), _ => CanAddProducer());
             saveProducerCommand = new RelayCommand(_ => SaveProducer(), _ => CanSaveChanges());
             filterDataCommand = new RelayCommand(_ => FilterData());
-            cancelDataCommand = new RelayCommand(_ => Cancel());
-        }
+			cancelDataCommand = new RelayCommand(_ => CancelData(), _ => CanCancelData());
+		}
 
-        private void AddNewProducer()
+		private void AddNewProducer()
         {
             ProducerViewModel cvm = new ProducerViewModel(daoMock.CreateNewProducent());
             cvm.IsChanged = true;
@@ -159,5 +159,18 @@ namespace WpfApp1.ViewModel
         {
             
         }
-    }
+
+		private bool CanCancelData()
+		{
+			return EditedProducer != null && EditedProducer.IsChanged;
+		}
+
+		private void CancelData()
+		{
+			if (EditedProducer != null && EditedProducer.IsChanged)
+			{
+				EditedProducer = null;
+			}
+		}
+	}
 }

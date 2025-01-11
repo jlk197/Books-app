@@ -44,9 +44,10 @@ namespace WpfApp1.ViewModel
             addNewBookCommand = new RelayCommand(_ => AddNewBook(), _ => CanAddBook());
             saveBookCommand = new RelayCommand(_ => SaveBook(), _ => CanSaveChanges());
             filterDataCommand = new RelayCommand(_ => FilterData());
-        }
+			cancelDataCommand = new RelayCommand(_ => CancelData(), _ => CanCancelData());
+		}
 
-        private void AddNewBook() {
+		private void AddNewBook() {
             BookViewModel cvm = new BookViewModel(daoMock.CreateNewBook(), null);
             cvm.IsChanged = true;
             EditedBook = cvm;
@@ -58,7 +59,26 @@ namespace WpfApp1.ViewModel
             get => addNewBookCommand;
         }
 
-        private BookViewModel selectedBook;
+		private RelayCommand cancelDataCommand;
+		public ICommand CancelDataCommand
+		{
+			get => cancelDataCommand;
+		}
+
+		private bool CanCancelData()
+		{
+			return EditedBook != null && EditedBook.IsChanged;
+		}
+
+		private void CancelData()
+		{
+			if (EditedBook != null && EditedBook.IsChanged)
+			{
+				EditedBook = null;
+			}
+		}
+
+		private BookViewModel selectedBook;
         public BookViewModel SelectedBook
         {
             get { return selectedBook; }
